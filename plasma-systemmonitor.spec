@@ -4,7 +4,7 @@
 
 Name: plasma-systemmonitor
 Version: 5.21.3
-Release: 2
+Release: 3
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Patch0: plasma-systemmonitor-5.21.3-qvariant.patch
 Summary: System monitor for Plasma
@@ -42,6 +42,8 @@ BuildRequires: cmake(KF5CoreAddons)
 BuildRequires: cmake(KF5Attica)
 BuildRequires: cmake(KF5NewStuffCore)
 BuildRequires: cmake(KF5NewStuffQuick)
+Requires:	ksysguard
+Requires:	libksysguard
 
 %description
 System monitor for Plasma
