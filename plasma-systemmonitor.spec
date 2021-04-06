@@ -3,8 +3,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: plasma-systemmonitor
-Version: 5.21.3
-Release: 3
+Version: 5.21.4
+Release: 1
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Patch0: plasma-systemmonitor-5.21.3-qvariant.patch
 Summary: System monitor for Plasma
