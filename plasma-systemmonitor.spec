@@ -1,12 +1,10 @@
-%define debug_package %{nil}
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: plasma-systemmonitor
 Version: 5.21.5
-Release: 1
+Release: 2
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
-Patch0: plasma-systemmonitor-5.21.3-qvariant.patch
 Summary: System monitor for Plasma
 URL: http://kde.org/
 License: GPL
