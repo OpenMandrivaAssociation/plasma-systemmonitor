@@ -2,8 +2,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: plasma-systemmonitor
-Version: 5.23.5
-Release: 2
+Version: 5.24.0
+Release: 1
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: System monitor for Plasma
 URL: http://kde.org/
@@ -65,3 +65,4 @@ System monitor for Plasma.
 %{_datadir}/knsrcfiles/plasma-systemmonitor.knsrc
 %{_datadir}/ksysguard
 %{_datadir}/plasma-systemmonitor
+%{_datadir}/plasma/kinfocenter/externalmodules/kcm_external_plasma-systemmonitor.desktop
