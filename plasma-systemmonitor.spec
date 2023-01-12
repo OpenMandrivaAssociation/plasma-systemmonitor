@@ -1,9 +1,9 @@
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
-%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+%define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: plasma-systemmonitor
 Version: 5.26.5
-Release: 1
+Release: 2
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: System monitor for Plasma
 URL: http://kde.org/
@@ -40,6 +40,8 @@ BuildRequires: cmake(KF5CoreAddons)
 BuildRequires: cmake(KF5Attica)
 BuildRequires: cmake(KF5NewStuffCore)
 BuildRequires: cmake(KF5NewStuffQuick)
+BuildRequires: ksystemstats
+BuildRequires: qt5-qtquickcontrols2
 Requires: ksystemstats
 Requires: qt5-qtquickcontrols2
 
