@@ -22,7 +22,7 @@ BuildRequires: cmake(KF5KIO)
 BuildRequires: cmake(KF5DBusAddons)
 BuildRequires: cmake(KF5NewStuff)
 BuildRequires: cmake(KF5ItemModels)
-BuildRequires: cmake(KSysGuard)
+BuildRequires: cmake(KSysGuard) < 5.27.50
 BuildRequires: cmake(Qt5QuickControls2)
 BuildRequires: cmake(KF5Kirigami2)
 BuildRequires: cmake(KF5Package)
