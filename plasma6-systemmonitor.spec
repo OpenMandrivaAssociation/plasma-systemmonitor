@@ -45,6 +45,7 @@ BuildRequires: cmake(KF6XmlGui)
 BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: cmake(KF6Attica)
 BuildRequires: cmake(KF6NewStuffCore)
+BuildRequires: plasma6-xdg-desktop-portal-kde
 
 %description
 System monitor for Plasma.
