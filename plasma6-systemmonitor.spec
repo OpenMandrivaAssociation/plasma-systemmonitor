@@ -45,6 +45,7 @@ BuildRequires: cmake(KF6XmlGui)
 BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: cmake(KF6Attica)
 BuildRequires: cmake(KF6NewStuffCore)
+BuildRequires: cmake(KF6KirigamiAddons)
 BuildRequires: plasma6-xdg-desktop-portal-kde
 
 %description
