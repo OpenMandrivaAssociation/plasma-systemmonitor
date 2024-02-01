@@ -3,7 +3,7 @@
 #define git 20231104
 
 Name: plasma6-systemmonitor
-Version: 5.92.0
+Version: 5.93.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/master/plasma-systemmonitor-master.tar.bz2#/plasma-systemmonitor-%{git}.tar.bz2
@@ -76,3 +76,4 @@ System monitor for Plasma.
 %{_datadir}/plasma/kinfocenter/externalmodules/kcm_external_plasma-systemmonitor.desktop
 %{_datadir}/metainfo/org.kde.plasma-systemmonitor.metainfo.xml
 %{_libdir}/libPlasmaSystemMonitor*.so*
+%{_datadir}/kglobalaccel/org.kde.plasma-systemmonitor.desktop
