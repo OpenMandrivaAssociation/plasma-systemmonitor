@@ -6,7 +6,7 @@ Version: 5.27.11
 Release: 1
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: System monitor for Plasma
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: Graphical desktop/KDE
 BuildRequires: cmake(ECM)
