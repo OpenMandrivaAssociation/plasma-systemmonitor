@@ -13,7 +13,7 @@ Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/%{gitbranc
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/plasma-systemmonitor-%{version}.tar.xz
 %endif
 Summary: System monitor for Plasma
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: Graphical desktop/KDE
 BuildRequires: cmake(ECM)
