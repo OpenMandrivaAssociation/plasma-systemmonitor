@@ -5,7 +5,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name: plasma6-systemmonitor
-Version: 6.2.5
+Version: 6.3.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/%{gitbranch}/plasma-systemmonitor-%{gitbranchd}.tar.bz2#/plasma-systemmonitor-%{git}.tar.bz2
@@ -79,3 +79,5 @@ System monitor for Plasma.
 %{_datadir}/metainfo/org.kde.plasma-systemmonitor.metainfo.xml
 %{_libdir}/libPlasmaSystemMonitor*.so*
 %{_datadir}/kglobalaccel/org.kde.plasma-systemmonitor.desktop
+%{_datadir}/kconf_update/plasma-systemmonitor-replace-vmpss.py
+%{_datadir}/kconf_update/plasma-systemmonitor.upd
