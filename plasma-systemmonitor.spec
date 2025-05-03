@@ -4,9 +4,9 @@
 %define gitbranch Plasma/6.0
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
-Name: plasma6-systemmonitor
+Name: plasma-systemmonitor
 Version: 6.3.4
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/%{gitbranch}/plasma-systemmonitor-%{gitbranchd}.tar.bz2#/plasma-systemmonitor-%{git}.tar.bz2
 %else
@@ -48,24 +48,15 @@ BuildRequires: cmake(KF6CoreAddons)
 BuildRequires: cmake(KF6Attica)
 BuildRequires: cmake(KF6NewStuffCore)
 BuildRequires: cmake(KF6KirigamiAddons)
+# Renamed after 6.0 2025-05-03
+%rename plasma6-systemmonitor
+
+BuildSystem:	cmake
+BuildOption:	-DBUILD_QCH:BOOL=ON
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 System monitor for Plasma.
-
-%prep
-%autosetup -p1 -n plasma-systemmonitor-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DBUILD_QCH:BOOL=ON \
-	-DBUILD_WITH_QT6:BOOL=ON \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html
 
 %files -f %{name}.lang
 %{_bindir}/plasma-systemmonitor
