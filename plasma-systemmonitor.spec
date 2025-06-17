@@ -5,7 +5,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name: plasma-systemmonitor
-Version: 6.3.5
+Version: 6.4.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/%{gitbranch}/plasma-systemmonitor-%{gitbranchd}.tar.bz2#/plasma-systemmonitor-%{git}.tar.bz2
@@ -62,7 +62,6 @@ System monitor for Plasma.
 %{_bindir}/plasma-systemmonitor
 %{_qtdir}/qml/org/kde/ksysguard
 %{_datadir}/applications/org.kde.plasma-systemmonitor.desktop
-%{_datadir}/config.kcfg/systemmonitor.kcfg
 %{_datadir}/knsrcfiles/plasma-systemmonitor.knsrc
 %{_datadir}/ksysguard
 %{_datadir}/plasma-systemmonitor
