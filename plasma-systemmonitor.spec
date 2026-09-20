@@ -6,7 +6,7 @@
 
 Name: plasma-systemmonitor
 Version: 6.7.5
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/%{gitbranch}/plasma-systemmonitor-%{gitbranchd}.tar.bz2#/plasma-systemmonitor-%{git}.tar.bz2
 %else
@@ -51,6 +51,8 @@ BuildRequires: cmake(KF6NewStuffCore)
 BuildRequires: cmake(KF6KirigamiAddons)
 # Renamed after 6.0 2025-05-03
 %rename plasma6-systemmonitor
+# Needed for Intel GPU usage and few more optional features.
+Recommends:  ksystemstats
 
 BuildSystem:	cmake
 BuildOption:	-DBUILD_QCH:BOOL=ON
