@@ -6,7 +6,7 @@
 
 Name: plasma-systemmonitor
 Version: 6.7.5
-Release: %{?git:0.%{git}.}2
+Release: %{?git:0.%{git}.}3
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/plasma/plasma-systemmonitor/-/archive/%{gitbranch}/plasma-systemmonitor-%{gitbranchd}.tar.bz2#/plasma-systemmonitor-%{git}.tar.bz2
 %else
