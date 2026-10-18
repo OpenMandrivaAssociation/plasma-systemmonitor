@@ -65,6 +65,7 @@ System monitor for Plasma.
 %{_bindir}/plasma-systemmonitor
 %{_qtdir}/qml/org/kde/ksysguard
 %{_datadir}/applications/org.kde.plasma-systemmonitor.desktop
+%{_datadir}/config.kcfg/systemmonitor.kcfg
 %{_datadir}/knsrcfiles/plasma-systemmonitor.knsrc
 %{_datadir}/ksysguard
 %{_datadir}/plasma-systemmonitor
